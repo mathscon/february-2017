@@ -1,0 +1,121 @@
+doctype html
+html(lang='en')
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title mathscon
+    // Bootstrap Core CSS
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    // Custom CSS
+    link(href='css/full-slider.css', rel='stylesheet')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+
+  body
+    // Navigation
+    nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+      .container
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Start Bootstrap
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='#') About
+            li
+              a(href='#') Services
+            li
+              a(href='#') Contact
+        // /.navbar-collapse
+      // /.container
+    // Full Page Image Background Carousel Header
+    header#myCarousel.carousel.slide
+      // Indicators
+      // Wrapper for Slides
+      .carousel-inner
+        .item.active
+          // Set the first background image using inline CSS below.
+          .fill(style="background-image:url('http://placehold.it/1900x1080&text=Slide One');")
+      // Controls
+    // Page Content
+    .container
+      .row
+        .col-lg-12
+          .col-lg-6 
+          .col-lg-6 
+            h1 About
+      hr
+      .row
+        .col-lg-12
+          h1 Schedule
+      hr
+      .row
+        .col-lg-12
+          h1 Speakers
+      hr 
+      .row
+        .col-lg-12
+          h1 Upcoming Events
+      hr 
+      .row
+        .col-lg-12
+          h1 Ongoing Events
+      hr  
+      .row
+        .col-lg-12
+          h1 Tickets
+      hr      
+      .row
+        .col-lg-12
+          h1 What do they think of us?
+      hr 
+      .row
+        .col-lg-12
+          h1 Special Offer
+      hr 
+      .row
+        .col-lg-12
+          h1 Partners
+      hr 
+      .row
+        .col-lg-12
+          h1 Recent News
+      hr 
+      .row
+        .col-lg-12
+          h1 Our Team
+      hr 
+      .row
+        .col-lg-4
+          h1 Email
+        .col-lg-4
+          h1 Phone
+        .col-lg-4
+          h1 Venue
+      hr 
+      // Footer
+    footer
+      .container
+        .row
+          .col-lg-12
+            p Copyright © Your Website 2014
+        // /.row
+    // /.container
+    // jQuery
+    script(src='js/jquery.js')
+    // Bootstrap Core JavaScript
+    script(src='js/bootstrap.min.js')
+    // Script to Activate the Carousel
