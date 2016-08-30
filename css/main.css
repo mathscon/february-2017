@@ -1,0 +1,310 @@
+html,
+body {
+    height: 100%;
+}
+
+.dim {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-theme {
+  color: #ff284d;
+  background-color: rgba(255,255,255,0.0);
+  border-color: #ff284d;
+}
+
+.btn-theme:hover {
+  color: #fff;
+  background-color: #ff284d;
+  border-color: #ff284d;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.schedule-back {
+  color: #323333;
+  border: 0.25px solid #f3f3f3;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.schedule-back:hover {
+  border: 0.25px solid #ff284d;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+.schedule-back img {
+  border: 5px solid #f7f7f7;
+}
+
+.white-back {
+  color: #323333;
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.grey-back {
+  color: #323333;
+  background-color: #f9f9f9;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.grey-box {
+  color: #323333;
+  background-color: #f3f3f3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.grey-img-back {
+  color: #fff;
+  background-image: url('../grey_triangle.jpg');
+  height: 300px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.dark-grey-back {
+  color: #fff;
+  background-color: #171414;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#map {
+    width: 100%; height: 400px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.contact {
+  color: #fff;
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  width: 400px;
+  height: 400px;
+  z-index: 10;
+}
+
+.contact input {
+  background-color: rgba(0,0,0,0.0);
+  border-color: #ff284d;
+}
+
+.contact textarea {
+  background-color: rgba(0,0,0,0.0);
+  border-color: #ff284d;
+}
+
+.DocumentList
+{
+    overflow-x:scroll;
+    overflow-y:hidden;
+    height:100%;
+    width:100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    padding-bottom: 10px;
+}
+
+.DocumentItem
+{
+    background: #f7f7f7;
+    padding:10px;
+    height:200px;
+    width:175px;
+    margin-right: 15px;
+}
+
+.DocumentItem img {
+  border: 5px solid #fff;
+}
+
+.DocumentItem:hover {
+  color: #ff284d;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+} 
+
+.DocumentItem:hover img {
+  border: 5px solid #ff284d;
+}
+
+.TeamItem
+{
+    color: #f7f7f7;
+    padding:10px;
+    height:200px;
+    width:175px;
+    margin-right: 15px;
+}
+
+.TeamItem img {
+  border: 1px solid #ff284d;
+}
+
+.TeamItem:hover {
+  color: #ff284d;
+} 
+
+.TeamItem:hover img {
+  border: 1px solid #323333;
+}
+
+.list-inline {
+  white-space:nowrap;
+}
+
+footer {
+    background-color: #171414;
+}
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+
+	padding: 10px 50px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-right{
+	float: left;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+
+.footer-distributed .footer-right a:hover {
+
+	color: #ff284d;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
+
+.navbar {
+  background-color: rgba(23,20,20, 0);
+  border: 0px;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 75%;
+  margin-top: 5px;
+  padding: 15px;
+  width: auto;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #ff284d;
+  background-color: rgba(23,20,20, 0);
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #ff284d;
+}
+.example3 .navbar-brand {
+  height: 80px;
+}
+
+.example3 .nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.example3 .navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
