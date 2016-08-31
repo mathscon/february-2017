@@ -27,7 +27,7 @@ html(lang='en')
     // Navigation
     
     .example3
-      nav.navbar.navbar-inverse.navbar-fixed-top
+      nav.navbar.navbar-inverse.navbar-fixed-top.page-scroll
         .container
           .navbar-header
             button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar3')
@@ -40,19 +40,19 @@ html(lang='en')
           #navbar3.navbar-collapse.collapse
             ul.nav.navbar-nav.navbar-right
               li
-                a(href='#about') about
+                a.page-scroll(href='#about') about
               li
-                a(href='#schedule') schedule
+                a.page-scroll(href='#schedule') schedule
               li
-                a(href='#speakers') speakers
+                a.page-scroll(href='#speakers') speakers
               li
-                a(href='#partners') partners
+                a.page-scroll(href='#partners') partners
               li
-                a(href='#tickets') tickets
+                a.page-scroll(href='#tickets') tickets
               li
-                a(href='#organizers') organizers
+                a.page-scroll(href='#organizers') organizers
               li
-                a(href='#contact') contact us
+                a.page-scroll(href='#contact') contact us
           // /.nav-collapse
         // /.container-fluid
 
@@ -65,6 +65,12 @@ html(lang='en')
           // Set the first background image using inline CSS below.
           img.fill(src='bg01.jpg')
           .dim
+            .title.text-center
+              h1 mathscon
+              h3.theme-color bringing together brilliant minds of the world
+            .go-down.text-center
+              a(href='#about')
+                i.fa.fa-chevron-down.fa-3x(aria-hidden='true')
 
     // Page Content
     #about.container-fluid.white-back
@@ -241,6 +247,8 @@ html(lang='en')
     script(src='js/maps.js')
     script(src='js/navbar.js')
     script(src='js/owl.carousel.min.js')
+    script(src='js/jquery.easing.min.js')
+    script(src='js/scrolling-nav.js')
     script(src='js/speakers.js')
     script(src='http://maps.google.com/maps/api/js?key=AIzaSyAJcu4LfSHQ6Qv1T8MHWSklFl0g1Y4B49Y&sensor=false')
     // Script to Activate the Carousel

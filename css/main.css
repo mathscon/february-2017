@@ -16,6 +16,35 @@ body {
     height: 100%;
 }
 
+.title {
+  position: absolute;
+  color: #fff;
+  top: 30%;
+  width: 100%;
+}
+
+.title h1 {
+  font-size: 120px
+}
+
+.theme-color {
+  color: #ff284d;
+}
+
+.go-down {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+}
+
+.go-down a {
+  color: #fff;
+}
+
+.go-down i:hover {
+  color: #ff284d;
+}
+
 .btn-theme {
   color: #ff284d;
   background-color: rgba(255,255,255,0.0);
@@ -77,37 +106,37 @@ body {
 .white-back {
   color: #323333;
   background-color: #fff;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .grey-back {
   color: #323333;
   background-color: #f9f9f9;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .grey-box {
   color: #323333;
   background-color: #f3f3f3;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .grey-img-back {
   color: #fff;
   background-image: url('../grey_triangle.jpg');
   height: 300px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .dark-grey-back {
   color: #fff;
   background-color: #171414;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 #map {
