@@ -3,6 +3,10 @@ body {
     height: 100%;
 }
 
+.control {
+  padding-top: 91px;
+}
+
 .dim {
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
