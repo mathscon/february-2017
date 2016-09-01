@@ -1,15 +1,69 @@
 $(document).ready(function() {
  
-  var owl = $("#speakers-owl");
+  var speakers = $("#speakers-owl");
  
-  owl.owlCarousel({
-      items : 4, //10 items above 1000px browser width
-      itemsDesktop : [1000,4], //5 items between 1000px and 901px
-      itemsDesktopSmall : [900,4], // betweem 900px and 601px
-      itemsTablet: [600,2], //2 items between 600 and 0
-      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+  speakers.owlCarousel({
+    loop:true,
+    margin:2,
+    autoWidth: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        800:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    },
+    autoplay:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true
   });
 
-owl.trigger('owl.play',5000);
+
+  var partners = $("#partners-owl");
  
+  partners.owlCarousel({
+    loop:true,
+    margin:2,
+    autoWidth: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        800:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    },
+    autoplay:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true  
+  });
+ 
+  var team = $("#team-owl");
+ 
+  team.owlCarousel({
+    loop:true,
+    margin:5,
+    autoWidth: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        800:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    },
+    autoplay:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true  
+  });
 });

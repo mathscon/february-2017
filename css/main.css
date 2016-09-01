@@ -4,7 +4,7 @@ body {
 }
 
 .control {
-  padding-top: 91px;
+  padding-top: 110px;
 }
 
 .dim {
@@ -184,8 +184,8 @@ body {
 {
     background: #f7f7f7;
     padding:10px;
-    height:200px;
-    width:175px;
+    height:270px;
+    width:215px;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -210,9 +210,12 @@ body {
 {
     color: #f7f7f7;
     padding:10px;
-    height:200px;
-    width:175px;
-    margin-right: 15px;
+    height:270px;
+    width:215px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .TeamItem img {
@@ -225,6 +228,10 @@ body {
 
 .TeamItem:hover img {
   border: 1px solid #323333;
+}
+
+.PartnerItem {
+  width: 50px;
 }
 
 .list-inline {

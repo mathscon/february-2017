@@ -139,47 +139,48 @@ html(lang='en')
     #speakers.container-fluid.white-back
       .row.text-center
           h3 Speakers
-      br
       .row.text-center
-        .col-lg-1.col-lg-offset-1.control.text-center
+        .col-xs-1.col-xs-offset-1.col-lg-1.col-lg-offset-1.control.text-right
           i.fa.fa-chevron-left.fa-2x.btn-theme(aria-hidden='true')
-        .col-lg-8
+        .col-lg-8.col-xs-8
           #speakers-owl.owl-carousel
             .DocumentItem.text-center
-              img.img-circle(src='avatar.jpg' width='75%')
+              img(src='avatar.jpg')
               h5 Abhinav Mishra
               h6 Webmaster
             .DocumentItem.text-center
-              img.img-circle(src='avatar.jpg' width='75%')
+              img(src='avatar.jpg')
               h5 Abhinav Mishra
               h6 Founder
             .DocumentItem.text-center
-              img.img-circle(src='avatar.jpg' width='75%')
+              img(src='avatar.jpg')
               h5 Abhinav Mishra
               h6 Webmaster
             .DocumentItem.text-center
-              img.img-circle(src='avatar.jpg' width='75%')
+              img(src='avatar.jpg')
               h5 Abhinav Mishra
               h6 Webmaster
-        .col-lg-1.control.text-left
+        .col-lg-1.col-xs-1.control.text-left
           i.fa.fa-chevron-right.fa-2x.btn-theme(aria-hidden='true')
 
     #partners.container-fluid.dark-grey-back
-      .col-lg-12.text-center
-        .row
+      .row
+        .col-lg-12.text-center
             h1 Partners
-        br
-        .row
-           .col-lg-2.col-lg-offset-1(style='border-right: 1px solid #252020;')
-             img(src='docsoc.png' width='100%')
-           .col-lg-2(style='border-right: 1px solid #252020;')
-             img(src='docsoc.png' width='100%')
-           .col-lg-2(style='border-right: 1px solid #252020;')
-             img(src='docsoc.png' width='100%')
-           .col-lg-2(style='border-right: 1px solid #252020;')
-             img(src='docsoc.png' width='100%')
-           .col-lg-2
-             img(src='docsoc.png' width='100%')
+
+      .row
+        .col-xs-10.col-xs-offset-1.col-lg-10.col-lg-offset-1.text-center
+          #partners-owl.owl-carousel
+             .PartnerItem
+               img(src='docsoc.png' width='50px')
+             .PartnerItem
+               img(src='docsoc.png' width='50px')
+             .PartnerItem
+               img(src='docsoc.png' width='50px')
+             .PartnerItem
+               img(src='docsoc.png' width='50px')
+             .PartnerItem
+               img(src='docsoc.png' width='50px')
         
     #tickets.container-fluid.fill.grey-img-back
       .col-lg-12.text-center
@@ -193,21 +194,22 @@ html(lang='en')
     #organizers.container-fluid.grey-back
       .row.text-center
           h3 Team
-          .col-lg-12
-              ul.list-inline
-                li.TeamItem.text-center
+      .row.text-center
+          .col-xs-8.col-xs-offset-2.col-lg-8.col-lg-offset-2
+            #team-owl.owl-carousel
+                .TeamItem.text-center
                   img.img-circle(src='avatar.jpg' width='75%')
                   h5 Abhinav Mishra
                   h6 Webmaster
-                li.TeamItem.text-center
+                .TeamItem.text-center
                   img.img-circle(src='avatar.jpg' width='75%')
                   h5 Abhinav Mishra
                   h6 Webmaster
-                li.TeamItem.text-center
+                .TeamItem.text-center
                   img.img-circle(src='avatar.jpg' width='75%')
                   h5 Abhinav Mishra
                   h6 Webmaster
-                li.TeamItem.text-center
+                .TeamItem.text-center
                   img.img-circle(src='avatar.jpg' width='75%')
                   h5 Abhinav Mishra
                   h6 Webmaster
