@@ -63,7 +63,8 @@ html(lang='en')
       .carousel-inner
         .item.active
           // Set the first background image using inline CSS below.
-          img.fill(src='bg01.jpg')
+          img.fill.hidden-xs.hidden-sm(src='bg01.jpg')
+          img.fill.hidden-lg.hidden-md(src='bg01_mobile.jpg')
           .dim
             .title.text-center
               h1 mathscon.
@@ -234,22 +235,24 @@ html(lang='en')
     .container-fluid.grey-back
       .row
         .container
-          .col-lg-2.col-lg-offset-3.text-center
+          .col-xs-4.col-xs-offset-2.col-lg-2.col-lg-offset-2.text-center
             h3.glyphicon.glyphicon-inbox
             h4 Email
-          .col-lg-2.text-center
+          .col-xs-4.col-lg-2.text-center
             h3.glyphicon.glyphicon-earphone
             h4 Phone
-          .col-lg-2.text-center
+          .col-xs-4.col-xs-offset-2.col-lg-2.text-center
             h3.glyphicon.glyphicon-tower
             h4 Venue
+          .col-xs-4.col-lg-2.text-center
+            h3.glyphicon.glyphicon-tower
+            h4 Social
+
 
     footer.footer-distributed
       .container-fluid
         .col-lg-8.col-lg-offset-2
           .footer-right
-            a(href="#")
-              i.fa.fa-facebook
 
     // jQuery
     script(src='js/jquery.js')
