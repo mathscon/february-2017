@@ -27,6 +27,18 @@ body {
   font-size: 120px
 }
 
+.theme-input {
+  background-color: rgba(0,0,0,0.0);
+  color: #fff;
+  margin: 10px;
+  border-color: #ff284d;
+}
+
+.signup {
+  margin-top: 30px;
+}
+
+
 .theme-color {
   color: #ff284d;
 }
@@ -48,6 +60,7 @@ body {
 .btn-theme {
   color: #ff284d;
   background-color: rgba(255,255,255,0.0);
+  margin: 10px;
   border-color: #ff284d;
 }
 
@@ -367,4 +380,14 @@ footer {
         .navbar {
           background-color: rgba(23, 20, 20, 1);
 	}
+}
+
+@media (max-width: 500px) {
+  .title h1 {
+    font-size: 60px
+  }
+
+  .title h3 {
+    font-size: 18px
+  }
 }

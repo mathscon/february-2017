@@ -67,8 +67,13 @@ html(lang='en')
           img.fill.hidden-lg.hidden-md(src='bg01_mobile.jpg')
           .dim
             .title.text-center
-              h1 mathscon.
-              h3.theme-color bringing together brilliant minds of the world
+              .row
+                h1 mathscon.
+                h3.theme-color bringing together brilliant minds of the world
+              .row.signup
+                form.form-inline
+                  input.form-control.theme-input#email(type='email', placeholder='Email')
+                  button.btn.btn-theme(type='submit') Subscribe for updates
             .go-down.text-center
               a(href='#about')
                 i.fa.fa-chevron-down.fa-3x(aria-hidden='true')
@@ -217,7 +222,7 @@ html(lang='en')
 
     #contact.wrapper
       #map
-      .contact
+      .contact.text-center
         .col-lg-10.col-lg-offset-1
           br
           form
