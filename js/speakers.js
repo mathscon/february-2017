@@ -3,9 +3,7 @@ $(document).ready(function() {
   var speakers = $("#speakers-owl");
  
   speakers.owlCarousel({
-    loop:true,
     margin:2,
-    autoWidth: true,
     responsive:{
         0:{
             items:1
@@ -18,7 +16,7 @@ $(document).ready(function() {
         }
     },
     autoplay:true,
-    autoplayTimeout:4000,
+    autoplayTimeout:5000,
     autoplayHoverPause:true
   });
 
@@ -26,9 +24,7 @@ $(document).ready(function() {
   var partners = $("#partners-owl");
  
   partners.owlCarousel({
-    loop:true,
     margin:2,
-    autoWidth: true,
     responsive:{
         0:{
             items:1
@@ -37,11 +33,11 @@ $(document).ready(function() {
             items:2
         },
         1000:{
-            items:4
+            items:5
         }
     },
     autoplay:true,
-    autoplayTimeout:4000,
+    autoplayTimeout:5000,
     autoplayHoverPause:true  
   });
  
@@ -50,7 +46,6 @@ $(document).ready(function() {
   team.owlCarousel({
     loop:true,
     margin:5,
-    autoWidth: true,
     responsive:{
         0:{
             items:1
@@ -63,7 +58,7 @@ $(document).ready(function() {
         }
     },
     autoplay:true,
-    autoplayTimeout:4000,
+    autoplayTimeout:5000,
     autoplayHoverPause:true  
   });
 });
