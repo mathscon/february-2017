@@ -244,7 +244,6 @@ body {
 }
 
 .PartnerItem {
-  width: 50px;
 }
 
 .list-inline {
@@ -375,6 +374,12 @@ footer {
 	}
 }
 
+@media (max-width: 900px) {
+  .contact {
+    position: static; 
+    width: 100%;
+  }
+}
 
 @media (max-width: 800px) {
         .navbar {
