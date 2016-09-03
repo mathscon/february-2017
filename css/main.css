@@ -221,7 +221,7 @@ body {
 
 .TeamItem
 {
-    color: #f7f7f7;
+    color: #ff284d;
     padding:10px;
     height:270px;
     width:215px;
@@ -236,7 +236,7 @@ body {
 }
 
 .TeamItem:hover {
-  color: #ff284d;
+  color: #323333;
 } 
 
 .TeamItem:hover img {
