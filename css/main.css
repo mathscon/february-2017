@@ -5,6 +5,11 @@ body {
 
 .control {
   padding-top: 110px;
+  color: #ff284d;
+}
+
+.control:hover {
+  color: #171414;
 }
 
 .dim {
@@ -243,7 +248,7 @@ body {
   border: 1px solid #323333;
 }
 
-.PartnerItem {
+.PartnerItem{
 }
 
 .list-inline {

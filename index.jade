@@ -71,9 +71,9 @@ html(lang='en')
                 h1.fade-in.one mathscon.
                 h3.theme-color.fade-in.two bringing together brilliant minds of the world
               .row.signup
-                form.form-inline.fade-in.three
-                  input.form-control.theme-input#email(type='email', placeholder='Email')
-                  button.btn.btn-theme(type='submit') Subscribe for updates
+                form.form-inline.fade-in.three(action="https://mathscon.us13.list-manage.com/subscribe/post?u=cc6762cf17f84ce5eafc553b6&amp;id=d00bdf3fa4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate)
+                  input.form-control.theme-input(type='email', value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder='Email' required)
+                  button.btn.btn-theme(type='submit' id="mc-embedded-subscribe") Subscribe for updates
             .go-down.text-center.fade-in.four
               a(href='#about').page-scroll
                 i.fa.fa-chevron-down.fa-3x(aria-hidden='true')
@@ -144,30 +144,30 @@ html(lang='en')
 
     #speakers.container-fluid.white-back
       .row.text-center
-          h3 Speakers
+          h1 Speakers
       .row.text-center
         .col-xs-1.col-xs-offset-1.col-lg-1.col-lg-offset-1.control.text-right
-          i.fa.fa-chevron-left.fa-2x.btn-theme(aria-hidden='true')
+          i.fa.fa-chevron-left.fa-2x(aria-hidden='true')
         .col-lg-8.col-xs-8
           #speakers-owl.owl-carousel
             .DocumentItem.text-center
               img(src='images/general/avatar.jpg')
-              h5 Abhinav Mishra
-              h6 Webmaster
+              h5 to be declared
+              h6 soon :P
             .DocumentItem.text-center
               img(src='images/general/avatar.jpg')
-              h5 Abhinav Mishra
-              h6 Founder
+              h5 to be declared
+              h6 soon :P
             .DocumentItem.text-center
               img(src='images/general/avatar.jpg')
-              h5 Abhinav Mishra
-              h6 Webmaster
+              h5 to be declared
+              h6 soon :P
             .DocumentItem.text-center
               img(src='images/general/avatar.jpg')
-              h5 Abhinav Mishra
-              h6 Webmaster
+              h5 to be declared
+              h6 soon :P
         .col-lg-1.col-xs-1.control.text-left
-          i.fa.fa-chevron-right.fa-2x.btn-theme(aria-hidden='true')
+          i.fa.fa-chevron-right.fa-2x(aria-hidden='true')
 
     #partners.container-fluid.dark-grey-back
       .row
@@ -175,18 +175,18 @@ html(lang='en')
             h1 Partners
 
       .row
-        .col-xs-10.col-xs-offset-1.col-lg-10.col-lg-offset-1.text-center
+        .col-xs-10.col-xs-offset-1.text-center
           #partners-owl.owl-carousel
              .PartnerItem
-               img(src='images/partners/logoimperial.png')
+               img(src='images/partners/ucl.png')
              .PartnerItem
-               img(src='images/partners/logocambridge.png')
+               img(src='images/partners/cambridge.png')
              .PartnerItem
-               img(src='images/partners/logoucl.png')
+               img(src='images/partners/imperial.png')
              .PartnerItem
-               img(src='images/partners/logowarwick.png')
+               img(src='images/partners/oxford.png')
              .PartnerItem
-               img(src='images/partners/logoimperial.png')
+               img(src='images/partners/warwick.png')
         
     #tickets.container-fluid.fill.grey-img-back
       .col-lg-12.text-center
@@ -199,9 +199,11 @@ html(lang='en')
 
     #organizers.container-fluid.grey-back
       .row.text-center
-          h3 Team
+          h1 Organizers
       .row.text-center
-          .col-xs-8.col-xs-offset-2.col-lg-8.col-lg-offset-2
+          .col-xs-1.col-xs-offset-1.col-lg-1.col-lg-offset-1.control.text-right
+            i.fa.fa-chevron-left.fa-2x(aria-hidden='true')
+          .col-xs-8
             #team-owl.owl-carousel
                 .TeamItem.text-center
                   img.img-circle(src='images/team/teambwNikita.png' width='75%')
@@ -239,6 +241,8 @@ html(lang='en')
                   img.img-circle(src='images/team/teambwGeorgina.png' width='75%')
                   h5 Georgina
                   h6 Communications Officer
+          .col-lg-1.col-xs-1.control.text-left
+            i.fa.fa-chevron-right.fa-2x(aria-hidden='true')
 
     #contact.wrapper
       #map
