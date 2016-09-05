@@ -21,7 +21,7 @@ $(function () {
 
         var map = new google.maps.Map(mapCanvas, mapOptions);
 
-        var markerImage = 'marker.png';
+        var markerImage = 'images/general/marker.png';
 
         var marker = new google.maps.Marker({
             position: location,
