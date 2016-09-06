@@ -12,6 +12,14 @@ body {
   color: #171414;
 }
 
+.contact-div a{
+  color: #171414; 
+}
+
+.contact-div a:hover {
+  color: #ff284d;
+}
+
 .dim {
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
