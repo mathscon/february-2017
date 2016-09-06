@@ -20,6 +20,13 @@ $(document).ready(function() {
     autoplayHoverPause:true
   });
 
+  $('#speaker-next').click(function() {
+      speakers.trigger('next.owl.carousel');
+  })
+
+  $('#speaker-prev').click(function() {
+      speakers.trigger('prev.owl.carousel');
+  })
 
   var partners = $("#partners-owl");
  
@@ -61,4 +68,13 @@ $(document).ready(function() {
     autoplayTimeout:5000,
     autoplayHoverPause:true  
   });
+
+  $('#team-next').click(function() {
+      team.trigger('next.owl.carousel');
+  })
+
+  $('#team-prev').click(function() {
+      team.trigger('prev.owl.carousel');
+  })
+
 });
