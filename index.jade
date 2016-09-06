@@ -8,315 +8,42 @@ html(lang='en')
     meta(name='description', content='')
     meta(name='author', content='')
     title mathscon
-    // Bootstrap Core CSS
+
     link(href='css/bootstrap.min.css', rel='stylesheet')
     link(href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel='stylesheet')
     link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet')
     link(href='css/owl.carousel.css', rel='stylesheet')
     link(href='css/owl.theme.css', rel='stylesheet')
     link(href='css/owl.transitions.css', rel='stylesheet')
-    // Custom CSS
     link(href='css/main.css', rel='stylesheet')
-    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
-    // WARNING: Respond.js doesn't work if you view the page via file://
+
     //if lt IE 9
       script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
       script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
 
   body(data-spy="scroll" data-target=".navbar" data-offset="75")
-    // Navigation
-    
-    .example3
-      nav.navbar.navbar-inverse.navbar-fixed-top.page-scroll.fade-in.four
-        .container
-          .navbar-header
-            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar3')
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            .navbar-brand.page-scroll
-              img(src='images/general/logo.png')
-          #navbar3.navbar-collapse.collapse
-            ul.nav.navbar-nav.navbar-right
-              li
-                a.page-scroll(href='#about') about
-              li
-                a.page-scroll(href='#schedule') schedule
-              li
-                a.page-scroll(href='#speakers') speakers
-              li
-                a.page-scroll(href='#partners') partners
-              li
-                a.page-scroll(href='#tickets') tickets
-              li
-                a.page-scroll(href='#organizers') organizers
-              li
-                a.page-scroll(href='#contact') contact us
-          // /.nav-collapse
-        // /.container-fluid
 
-    // Full Page Image Background Carousel Header
-    header#myCarousel.carousel.carousel-fade
-      // Indicators
-      // Wrapper for Slides
-      .carousel-inner
-        .item.active
-          // Set the first background image using inline CSS below.
-          img.fill.hidden-xs.hidden-sm(src='images/general/bg01.jpg')
-          img.fill.hidden-lg.hidden-md(src='images/general/bg01_mobile.jpg')
-          .dim
-            .title.text-center
-              .row
-                h1.fade-in.one mathscon.
-                h3.theme-color.fade-in.two bringing together brilliant minds of the world
-              .row.signup
-                form.form-inline.fade-in.three(action="https://mathscon.us13.list-manage.com/subscribe/post?u=cc6762cf17f84ce5eafc553b6&amp;id=d00bdf3fa4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate)
-                  input.form-control.theme-input(type='email', value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder='Email' required)
-                  button.btn.btn-theme(type='submit' id="mc-embedded-subscribe") Subscribe for updates
-            .go-down.text-center.fade-in.four
-              a(href='#about').page-scroll
-                i.fa.fa-chevron-down.fa-3x(aria-hidden='true')
+    include sections/navigation.jade
 
-    // Page Content
-    #about.container-fluid.white-back
-          .col-lg-4.col-lg-offset-2 
-            .row
-              h3 about conference
-              p mathscon. is the largest student led mathematics conference in the United Kindgom. By bringing bright minds together under one roof, our goal is to give talks that are idea-focused, inspirational and provoke conversations that matter.
-            .row
-              hr
-              h3 about us
-              p mathscon. was founded by a group of students from Imperial College London and is organized with the help of several top Mathematics Universities in the UK - Cambridge, Imperial, Oxford, UCL and Warwick. We are group of people enthusiastic about the scope and application of this Science  and we want to share this passion with others.
-          .col-lg-4.white-box(style='margin:20px; border-style:solid; border-width:7px; border-color:#f7f7f7; padding-top:20px; padding-bottom:20px;')
-            .row
-              .col-xs-1.col-xs-offset-1.text-center
-                h5
-                  i.fa.fa-calendar
-              .col-xs-8
-                h5 10-11th February 2017
-            .row
-              .col-xs-1.col-xs-offset-1.text-center
-                h5
-                  i.fa.fa-graduation-cap
-              .col-xs-8
-                h5 5+ Universities
-            .row
-              .col-xs-1.col-xs-offset-1.text-center
-                h5
-                  i.fa.fa-users
-              .col-xs-8
-                h5 200 Tickets
-            .row
-              .col-xs-1.col-xs-offset-1.text-center
-                h5
-                  i.fa.fa-microphone
-              .col-xs-8
-                h5 10 Speakers
-            .row
-              .col-xs-1.col-xs-offset-1.text-center
-                h5
-                  i.fa.fa-map-marker
-              .col-xs-8
-                h5 Imperial College South Kensington Campus, Blackett Building, London, SW7 2AZ
-            br
-            .row
-              .col-lg-11.col-lg-offset-1
-                .btn.btn-theme Subscribe for updates
+    include sections/header.jade
 
-    #schedule.container-fluid.grey-back
-      .col-lg-12.text-center
-        .row
-            h1 Schedule
-        br
-        .row
-          .col-lg-8.col-lg-offset-2.schedule-back 
-            .col-lg-2
-              img.img-circle(src='images/general/avatar.jpg' height='100px')
-            .col-lg-2
-              h5 25 Mar
-              h5 2016
-              h5 09.10 PM
-            .col-lg-4
-              h4 Update Design and UX support
-            .col-lg-4
-              h5 Venue: Huxley Building, Imperial College London.
+    include sections/about.jade
 
-    #speakers.container-fluid.white-back
-      .row.text-center
-          h1 Speakers
-      .row.text-center
-        .col-xs-1.col-xs-offset-1.col-lg-1.col-lg-offset-1.control.text-right
-          i.fa.fa-chevron-left.fa-2x(aria-hidden='true')
-        .col-lg-8.col-xs-8
-          #speakers-owl.owl-carousel
-            .DocumentItem.text-center
-              img(src='images/general/avatar.jpg')
-              h5 to be declared
-              h6 soon :P
-            .DocumentItem.text-center
-              img(src='images/general/avatar.jpg')
-              h5 to be declared
-              h6 soon :P
-            .DocumentItem.text-center
-              img(src='images/general/avatar.jpg')
-              h5 to be declared
-              h6 soon :P
-            .DocumentItem.text-center
-              img(src='images/general/avatar.jpg')
-              h5 to be declared
-              h6 soon :P
-        .col-lg-1.col-xs-1.control.text-left
-          i.fa.fa-chevron-right.fa-2x(aria-hidden='true')
+    include sections/schedule.jade
 
-    #partners.container-fluid.dark-grey-back
-      .row
-        .col-lg-12.text-center
-            h1 Partners
+    include sections/speakers.jade
 
-      .row
-        .col-xs-10.col-xs-offset-1.text-center
-          #partners-owl.owl-carousel
-             .PartnerItem
-               img(src='images/partners/ucl.png')
-             .PartnerItem
-               img(src='images/partners/cambridge.png')
-             .PartnerItem
-               img(src='images/partners/imperial.png')
-             .PartnerItem
-               img(src='images/partners/oxford.png')
-             .PartnerItem
-               img(src='images/partners/warwick.png')
-        
-    #tickets.container-fluid.fill.grey-img-back
-      .col-lg-12.text-center
-        .row
-            h1 Tickets
-        br
-        .row
-          .col-lg-8.col-lg-offset-2.schedule-back 
-            h2 Eventbrite plugin here
+    include sections/partners.jade
 
-    #organizers.container-fluid.grey-back
-      .row.text-center
-          h1 Organizers
-      .row.text-center
-          .col-xs-1.col-xs-offset-1.col-lg-1.col-lg-offset-1.control.text-right
-            i.fa.fa-chevron-left.fa-2x(aria-hidden='true')
-          .col-xs-8
-            #team-owl.owl-carousel
-                .TeamItem.text-center
-                  a(href='https://www.linkedin.com/in/nikita-devyataykin-0a7182106?')
-                    span.badge.badge-notify
-                      i.fa.fa-linkedin.fa-2x
-                  img.img-circle(src='images/team/teambwNikita.png' width='75%')
-                  h5 Nikita
-                  h6 Co-founder
-                .TeamItem.text-center
-                  a(href='https://www.linkedin.com/in/mateusz-jakub-staniszewski-19946590?')
-                    span.badge.badge-notify
-                      i.fa.fa-linkedin.fa-2x
-                  img.img-circle(src='images/team/teambwMateusz.png' width='75%')
-                  h5 Mateusz
-                  h6 Co-founder
-                .TeamItem.text-center
-                  a(href='https://www.linkedin.com/in/attarali?')
-                    span.badge.badge-notify
-                      i.fa.fa-linkedin.fa-2x
-                  img.img-circle(src='images/team/teambwAli.png' width='75%')
-                  h5 Ali
-                  h6 Graphics Designer
-                .TeamItem.text-center
-                  a(href='https://www.linkedin.com/in/aurelien-favre-a3bab0112?')
-                    span.badge.badge-notify
-                      i.fa.fa-linkedin.fa-2x
-                  img.img-circle(src='images/team/teambwAureliene.png' width='75%')
-                  h5 Aureliene
-                  h6 Logistic and Liaison Officer
-                .TeamItem.text-center
-                  a(href='https://www.linkedin.com/in/david-p-klambauer-359509105?')
-                    span.badge.badge-notify
-                      i.fa.fa-linkedin.fa-2x
-                  img.img-circle(src='images/team/teambwDavid.png' width='75%')
-                  h5 David
-                  h6 Sponsorship Officer
-                .TeamItem.text-center
-                  a(href='https://www.linkedin.com/in/hector-papoulias-501554128?')
-                    span.badge.badge-notify
-                      i.fa.fa-linkedin.fa-2x
-                  img.img-circle(src='images/team/teambwHector.png' width='75%')
-                  h5 Hector
-                  h6 Budget Officer
-                .TeamItem.text-center
-                  a(href='https://www.linkedin.com/in/abhinav-mishra-114aa9b3?')
-                    span.badge.badge-notify
-                      i.fa.fa-linkedin.fa-2x
-                  img.img-circle(src='images/team/teambwAbhinav.png')
-                  h5 Abhinav
-                  h6 Webmaster
-                .TeamItem.text-center
-                  a(href='https://www.linkedin.com/in/marta-kościelak-4b47a087?')
-                    span.badge.badge-notify
-                      i.fa.fa-linkedin.fa-2x
-                  img.img-circle(src='images/team/teambwMarta.png' width='75%')
-                  h5 Marta
-                  h6 Marketing Officer
-                .TeamItem.text-center
-                  a(href='https://www.linkedin.com/in/georgina-stephanou-b74a3a128?')
-                    span.badge.badge-notify
-                      i.fa.fa-linkedin.fa-2x
-                  img.img-circle(src='images/team/teambwGeorgina.png' width='75%')
-                  h5 Georgina
-                  h6 Communications Officer
-          .col-lg-1.col-xs-1.control.text-left
-            i.fa.fa-chevron-right.fa-2x(aria-hidden='true')
+    include sections/tickets.jade
 
-    #contact.wrapper
-      #map
-      .contact.text-center
-        .col-lg-10.col-lg-offset-1
-          br
-          form
-            input.form-control(type='text', id='name', placeholder='Name*', required)
-            br
-            input.form-control(type='email', id='email', placeholder='Email*', required)
-            br
-            input.form-control(type='text', id='title', placeholder='Title')
-            br
-            textarea.form-control(rows='5', id='message', placeholder='Message*', required)
-            br
-            .btn.btn-theme Submit
-          
+    include sections/organizers.jade
 
-    .container-fluid.grey-back
-      .row.text-center
-        .container.contact-div
-          .col-lg-2.col-lg-offset-2
-            a(href='mailto:organizers.mathscon@gmail.com')
-              h3.fa.fa-envelope-o.fa-3x
-              h4 Email
-          .col-lg-2
-            a(href='tel:+447546668082')
-              h3.fa.fa-phone.fa-3x
-              h4 Phone
-          .col-lg-2
-            a(href='http://bit.ly/mathscon-venue')
-              h3.fa.fa-map-marker.fa-3x
-              h4 Venue
-          .col-lg-2
-            a(href='https://www.facebook.com/mathsconference/')
-              h3.fa.fa-facebook-square.fa-3x
-              h4 Social
+    include sections/contactus.jade
 
+    include sections/footer.jade
 
-    footer.footer-distributed
-      .container-fluid
-        .col-lg-8.col-lg-offset-2
-          .footer-right
-
-    // jQuery
     script(src='js/jquery.js')
-    // Bootstrap Core JavaScript
     script(src='js/bootstrap.min.js')
     script(src='js/maps.js')
     script(src='js/navbar.js')
@@ -325,4 +52,3 @@ html(lang='en')
     script(src='js/scrolling-nav.js')
     script(src='js/speakers.js')
     script(src='http://maps.google.com/maps/api/js?key=AIzaSyAJcu4LfSHQ6Qv1T8MHWSklFl0g1Y4B49Y&sensor=false')
-    // Script to Activate the Carousel

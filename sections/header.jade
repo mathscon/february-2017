@@ -1,0 +1,18 @@
+header#myCarousel.carousel.carousel-fade
+  .carousel-inner
+    .item.active
+      // Set the first background image using inline CSS below.
+      img.fill.hidden-xs.hidden-sm(src='images/general/bg01.jpg')
+      img.fill.hidden-lg.hidden-md(src='images/general/bg01_mobile.jpg')
+      .dim
+        .title.text-center
+          .row
+            h1.fade-in.one mathscon.
+            h3.theme-color.fade-in.two bringing together brilliant minds of the world
+          .row.signup
+            form.form-inline.fade-in.three(action="https://mathscon.us13.list-manage.com/subscribe/post?u=cc6762cf17f84ce5eafc553b6&amp;id=d00bdf3fa4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate)
+              input.form-control.theme-input(type='email', value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder='Email' required)
+              button.btn.btn-theme(type='submit' id="mc-embedded-subscribe") Subscribe for updates
+        .go-down.text-center.fade-in.four
+          a(href='#about').page-scroll
+            i.fa.fa-chevron-down.fa-3x(aria-hidden='true')
