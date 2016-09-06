@@ -20,6 +20,19 @@ body {
   color: #ff284d;
 }
 
+
+.badge-notify{
+   background: #323333;
+   position:absolute;
+   top: 35%;
+   left: 70%;
+   z-index: 10;
+}
+
+.badge-notify:hover {
+  background: #ff284d;
+}
+
 .dim {
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
