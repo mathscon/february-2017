@@ -28,7 +28,12 @@ body {
    top: 45%;
    left: 90%;
    z-index: 10;
-  opacity: 0;
+   opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
 }
 
 .TeamImage {
@@ -37,6 +42,10 @@ body {
 
 .TeamImage:hover .badge-notify {
   opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .badge-notify:hover {
