@@ -1,0 +1,25 @@
+#!/bin/sh
+
+npm install --global gulp
+npm install
+
+rm -rf out
+
+mkdir out
+mkdir out/js
+mkdir out/css
+mkdir out/images
+mkdir out/fonts
+
+node_modules/.bin/jade index.jade
+
+mv index.html out/
+
+gulp
+
+cp -R css/*.min.css out/css/
+cp -R js/*.min.js out/js/
+cp -R images/ out/images/
+cp -R fonts/ out/fonts/
+
+zip -r website.zip out/
