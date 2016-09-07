@@ -21,6 +21,9 @@ body {
   color: #ff284d;
 }
 
+ul {
+    list-style-type: none;
+}
 
 .badge-notify{
    background: #323333;
