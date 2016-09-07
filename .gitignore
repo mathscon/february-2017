@@ -1,4 +1,6 @@
 *.html
+*.min.js
+*.min.css
 out/
 website.zip
 
