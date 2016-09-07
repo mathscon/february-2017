@@ -1,4 +1,6 @@
 *.html
+out/
+website.zip
 
 # Created by https://www.gitignore.io/api/macos,osx,node
 

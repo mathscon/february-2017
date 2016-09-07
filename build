@@ -1,0 +1,22 @@
+#!/bin/sh
+
+npm install
+
+rm -rf out
+
+mkdir out
+mkdir out/js
+mkdir out/css
+mkdir out/images
+mkdir out/fonts
+
+node_modules/.bin/jade index.jade
+
+mv index.html out/
+
+cp -R css/ out/css/
+cp -R js/ out/js/
+cp -R images/ out/images/
+cp -R fonts/ out/fonts/
+
+zip -r website.zip out/
