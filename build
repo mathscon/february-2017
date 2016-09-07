@@ -1,6 +1,5 @@
 #!/bin/sh
 
-npm install --global gulp
 npm install
 
 rm -rf out
@@ -15,7 +14,7 @@ node_modules/.bin/jade index.jade
 
 mv index.html out/
 
-gulp
+node_modules/.bin/gulp
 
 cp -R css/*.min.css out/css/
 cp -R js/*.min.js out/js/
