@@ -1,4 +1,7 @@
 $(document).ready(function(){       
+
+   $("html,body").animate({scrollTop: 0}, 1000);
+
    var scroll_start = 0;
    var collapsed = true;
    $(document).scroll(function() { 
