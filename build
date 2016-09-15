@@ -1,7 +1,5 @@
 #!/bin/sh
 
-npm install
-
 rm -rf out
 
 mkdir out
@@ -18,7 +16,7 @@ node_modules/.bin/gulp
 
 cp -R css/*.min.css out/css/
 cp -R js/*.min.js out/js/
-cp -R images/ out/images/
-cp -R fonts/ out/fonts/
+cp -R images/* out/images/
+cp -R fonts/* out/fonts/
 
 zip -r website.zip out/
