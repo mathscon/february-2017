@@ -304,7 +304,12 @@ ul {
   border: 1px solid #323333;
 }
 
-.PartnerItem{
+.PartnerItem img{
+  width: 100%;
+}
+
+.PartnerItem {
+  padding: 2px;
 }
 
 .custom-carousel {
