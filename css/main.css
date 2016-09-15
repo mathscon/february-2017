@@ -51,6 +51,11 @@ ul {
 
 }
 
+#collapse {
+  background-color: transparent;
+  border-color: transparent;
+}
+
 .TeamImage {
   position: relative;
 }
@@ -387,6 +392,10 @@ footer {
   padding: 0px;
 }
 
+.navbar-brand h2 {
+  padding-left: 10px;
+}
+
 .navbar-brand>img {
   height: 75%;
   margin-top: 5px;
@@ -443,14 +452,10 @@ footer {
   .contact {
     position: static; 
     width: 100%;
+    background-color: #171414;
   }
 }
 
-@media (max-width: 800px) {
-        .navbar {
-          background-color: rgba(23, 20, 20, 1);
-	}
-}
 
 @media (max-width: 500px) {
   .title h1 {

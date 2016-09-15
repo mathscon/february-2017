@@ -2,7 +2,7 @@
   nav.navbar.navbar-inverse.navbar-fixed-top.page-scroll.fade-in.four
     .container
       .navbar-header
-        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar3')
+        button#collapse.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar')
           span.sr-only Toggle navigation
           span.icon-bar
           span.icon-bar
@@ -10,7 +10,7 @@
         .navbar-brand.page-scroll
           //img(src='images/general/logo.png')
           h2 mathscon.
-      .navbar-collapse.collapse
+      #navbar.navbar-collapse.collapse
         ul.nav.navbar-nav.navbar-right
           li
             a.page-scroll(href='#about') about
