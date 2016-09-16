@@ -396,7 +396,11 @@ ul {
   outline: none;
 }
 .navbar-custom .navbar-brand {
-  font-weight: 700;
+  float: left;
+  height: 58px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: normal;
 }
 .navbar-custom .navbar-brand:focus {
   outline: none;
