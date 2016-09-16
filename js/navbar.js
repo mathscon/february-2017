@@ -1,43 +1,20 @@
 $(document).ready(function(){       
 
    $("html,body").animate({scrollTop: 0}, 1000);
-
-   var scroll_start = 0;
-   var collapsed = true;
-   $(document).scroll(function() { 
-   var startchange = $(window).width();
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > 0) {
-          navbarGrey();
+   
+   function collapseNavbar() {
+       if ($(".navbar").offset().top > 50) {
+           $(".navbar-fixed-top").addClass("top-nav-collapse");
        } else {
-          navbarTransparent();
+           $(".navbar-fixed-top").removeClass("top-nav-collapse");
        }
-   });
+   }
+   
+   $(window).scroll(collapseNavbar);
+   $(document).ready(collapseNavbar);
 
-   $(document).on('click','.navbar-collapse',function(e) {
-    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
-        $(this).collapse('hide');
-    }
+   $('.navbar-collapse ul li a').click(function() {
+       $(this).closest('.collapse').collapse('toggle');
    });
-
-   $(document).on('click','#collapse',function(e) {
-     if($(this).scrollTop() == 0) {
-       if($('.navbar-collapse').is(':visible')) {
-	  navbarGrey();
-       } else {
-          navbarTransparent();
-       }
-     } else {
-	  navbarGrey();
-     }
-   });
-
 });
 
-var navbarTransparent = function() {
-  $('.navbar').css('background-color', 'transparent');
-}
-
-var navbarGrey = function() {
-  $(".navbar").css('background-color', '#171414');
-}
