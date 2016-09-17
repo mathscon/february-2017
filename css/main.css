@@ -93,7 +93,8 @@ ul {
 }
 
 .title h1 {
-  font-size: 120px
+  font-size: 120px;
+  font-weight: bold;
 }
 
 .theme-input {
@@ -113,7 +114,10 @@ ul {
 }
 
 .go-down {
-  margin-top: 2em;
+  position: absolute;
+  color: #fff;
+  top: 90%;
+  width: 100%;
 }
 
 .go-down a {
@@ -379,6 +383,7 @@ ul {
   text-transform: lowercase;
   background-color: #171414;
   font-size: 16px;
+  font-weight: bold;
 }
 .navbar-custom .navbar-toggle {
   color: #fff;
