@@ -16,7 +16,9 @@ $(function () {
             scaleControl: false,
             streetViewControl: false,
             rotateControl: false,
-            fullscreenControl:  false
+            fullscreenControl:  false,
+            disableDefaultUI: true,
+            draggable: false
 	}
 
         var map = new google.maps.Map(mapCanvas, mapOptions);
