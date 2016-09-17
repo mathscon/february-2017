@@ -16,9 +16,13 @@ body {
     font-family: "Pier Sans";
 }
 
+footer h5 {
+    font-family: "Pier Sans";
+}
+
 .control {
   padding-top: 110px;
-  color: #ff284d;
+  color: #ff7f00;
 }
 
 .control:hover {
@@ -30,7 +34,7 @@ body {
 }
 
 .contact-div a:hover {
-  color: #ff284d;
+  color: #ff7f00;
 }
 
 ul {
@@ -69,7 +73,7 @@ ul {
 }
 
 .badge-notify:hover {
-  background: #ff284d;
+  background: #ff7f00;
 }
 
 .dim {
@@ -96,7 +100,7 @@ ul {
   background-color: rgba(0,0,0,0.0);
   color: #fff;
   margin: 10px;
-  border-color: #ff284d;
+  border-color: #ff7f00;
 }
 
 .signup {
@@ -105,13 +109,11 @@ ul {
 
 
 .theme-color {
-  color: #ff284d;
+  color: #ff7f00;
 }
 
 .go-down {
-  position: absolute;
-  top: 90%;
-  width: 100%;
+  margin-top: 2em;
 }
 
 .go-down a {
@@ -119,20 +121,20 @@ ul {
 }
 
 .go-down i:hover {
-  color: #ff284d;
+  color: #ff7f00;
 }
 
 .btn-theme {
-  color: #ff284d;
+  color: #ff7f00;
   background-color: rgba(255,255,255,0.0);
   margin: 10px;
-  border-color: #ff284d;
+  border-color: #ff7f00;
 }
 
 .btn-theme:hover {
   color: #fff;
-  background-color: #ff284d;
-  border-color: #ff284d;
+  background-color: #ff7f00;
+  border-color: #ff7f00;
 }
 
 .carousel,
@@ -173,7 +175,7 @@ ul {
 }
 
 .schedule-back:hover {
-  border: 0.25px solid #ff284d;
+  border: 0.25px solid #ff7f00;
   box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
@@ -266,17 +268,17 @@ ul {
 }
 
 .DocumentItem:hover {
-  color: #ff284d;
+  color: #ff7f00;
   box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 } 
 
 .DocumentItem:hover img {
-  border: 5px solid #ff284d;
+  border: 5px solid #ff7f00;
 }
 
 .TeamItem
 {
-    color: #ff284d;
+    color: #ff7f00;
     padding:10px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -285,7 +287,7 @@ ul {
 }
 
 .TeamItem img {
-  border: 1px solid #ff284d;
+  border: 1px solid #ff7f00;
 }
 
 .TeamItem:hover {
@@ -367,7 +369,7 @@ ul {
 
 .footer-distributed .footer-right a:hover {
 
-	color: #ff284d;
+	color: #ff7f00;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
@@ -407,7 +409,7 @@ ul {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: #ff284d;
+  color: #ff7f00;
   outline: 0;
   background-color: transparent;
 }
@@ -420,7 +422,7 @@ ul {
   outline: none;
 }
 .navbar-custom .nav li.active a {
-  color: #ff284d;
+  color: #ff7f00;
 }
 .navbar-custom .nav li.active a:hover {
   color: white;
@@ -558,7 +560,7 @@ form {
 			}
 
 			form .message.success {
-				color: #ff284d;
+				color: #ff7f00;
 			}
 
 				form .message.success:before {
@@ -720,7 +722,7 @@ form {
 			-ms-animation: focus 0.1s;
 			animation: focus 0.1s;
 			background-color: rgba(255, 255, 255, 0.125);
-			border-color: #ff284d;
+			border-color: #ff7f00;
 		}
 
 	.select-wrapper {
@@ -822,16 +824,16 @@ form {
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #ff284d;
-			border-color: #ff284d;
+			background: #ff7f00;
+			border-color: #ff7f00;
 			color: #ffffff;
 			content: '\f00c';
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #ff284d;
-			box-shadow: 0 0 0 2px #ff284d;
+			border-color: #ff7f00;
+			box-shadow: 0 0 0 2px #ff7f00;
 		}
 
 	input[type="checkbox"] + label:before {
