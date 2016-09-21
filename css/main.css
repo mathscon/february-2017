@@ -2,7 +2,6 @@
 	font-family: 'Pier Sans';
 	src: url('../fonts/PierSans.eot');
 	src: url('../fonts/PierSans.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/PierSans.woff2') format('woff2'),
 		url('../fonts/PierSans.woff') format('woff'),
 		url('../fonts/PierSans.ttf') format('truetype'),
 		url('../fonts/PierSans.svg#PierSans') format('svg');
