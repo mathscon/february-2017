@@ -112,6 +112,10 @@ ul {
   color: #ff7f00;
 }
 
+.less-agg {
+  color: #ddd;
+}
+
 .go-down {
   position: absolute;
   color: #fff;
