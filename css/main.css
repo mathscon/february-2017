@@ -555,6 +555,10 @@ footer h5 {
 
 @media (max-width: 600px) {
 
+	.title{
+	  top: 20%;
+	}
+
 
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-right{
