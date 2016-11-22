@@ -2,21 +2,23 @@
 
 rm -rf out
 
-mkdir out
-mkdir out/js
-mkdir out/css
-mkdir out/images
-mkdir out/fonts
+#mkdir out
+#mkdir out/js
+#mkdir out/css
+#mkdir out/images
+#mkdir out/fonts
+#mkdir out/vendor
 
 node_modules/.bin/jade index.jade
 
-mv index.html out/
+#mv index.html out/
 
 node_modules/.bin/gulp
 
-cp -R css/*.min.css out/css/
-cp -R js/*.min.js out/js/
-cp -R images/* out/images/
-cp -R fonts/* out/fonts/
+#cp -R css/*.min.css out/css/
+#cp -R js/*.min.js out/js/
+#cp -R images/* out/images/
+#cp -R fonts/* out/fonts/
+#cp -R vendor/* out/vendor/
 
 #zip -r website.zip out/

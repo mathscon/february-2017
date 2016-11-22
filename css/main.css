@@ -67,11 +67,18 @@ ul {
 }
 
 .contact-div a{
-  color: #171414; 
+  color: #ddd; 
 }
 
 .contact-div a:hover {
   color: #ff7f00;
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 1px solid #252020;
 }
 
 /*
@@ -152,7 +159,6 @@ ul {
   background: #ff7f00;
 }
 
-
 /*
  * -----------------------------------------------------------------------------
  * Contact Us
@@ -168,8 +174,6 @@ ul {
 footer h5 {
     font-family: "Pier Sans";
 }
-
-
 
 #collapse {
   background-color: transparent;
@@ -207,7 +211,6 @@ footer h5 {
 .signup {
   margin-top: 5em;
 }
-
 
 .theme-color {
   color: #ff7f00;
@@ -248,8 +251,7 @@ footer h5 {
 .carousel,
 .item,
 .active {
-    height: 100%;
-}
+    height: 100%;}
 
 .carousel-inner {
     height: 100%;
@@ -262,6 +264,16 @@ footer h5 {
   margin-bottom: 15px;
   margin-left: 15px;
   margin-right: 15px;
+}
+
+.remove-left-right-pad {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+#logistics {
+	padding-right: 0px;
+	padding-left: 0px;
 }
 
 .fill {
@@ -294,41 +306,47 @@ footer h5 {
 .white-back {
   color: #323333;
   background-color: #fff;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .grey-back {
   color: #323333;
   background-color: #f9f9f9;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .grey-box {
   color: #323333;
   background-color: #f3f3f3;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .grey-img-back {
   color: #fff;
   background-image: url('../images/general/grey_triangle.jpg');
   height: 300px;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .dark-grey-back {
   color: #fff;
   background-color: #171414;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-#map {
-    width: 100%; height: 400px;
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#map, #location {
+    width: 100%;
+    height: 400px;
 }
 
 .wrapper {
@@ -412,6 +430,14 @@ footer h5 {
 
 .PartnerItem {
   padding: 2px;
+}
+
+.PartnerItem > h5 {
+	visibility: hidden;
+}
+
+.PartnerItem:hover > h5 {
+	visibility: visible;
 }
 
 .custom-carousel {

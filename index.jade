@@ -1,63 +1,381 @@
 doctype html
 html(lang='en')
-
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='description', content='')
     meta(name='author', content='')
-
-    // Chrome, Firefox OS and Opera
-    meta(name="theme-color" content="#171414")
-    // Windows Phone
-    meta(name="msapplication-navbutton-color" content="#171414")
-    // iOS Safari
-    meta(name="apple-mobile-web-app-capable" content="yes")
-    meta(name="apple-mobile-web-app-status-bar-style" content="black")
-
     title mathscon.
-
-    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
-    link(href='css/main.min.css', rel='stylesheet')
+    // Bootstrap Core CSS
+    link(rel='icon', type='image/png', href='images/favicon.png')
+    link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
     link(href='css/slideshow.min.css', rel='stylesheet')
-
+    // Custom Fonts
+    link(href='vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic', rel='stylesheet', type='text/css')
+    // Plugin CSS
+    link(href='vendor/magnific-popup/magnific-popup.css', rel='stylesheet')
+    // Theme CSS
+    link(href='css/creative.min.css', rel='stylesheet')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
     //if lt IE 9
       script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
       script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
 
-  body(data-spy="scroll" data-target=".navbar" data-offset="75")
+  body#page-top
+    nav#mainNav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            i.fa.fa-bars
+          a.navbar-brand.page-scroll(href='#page-top')
+            | maths
+            space.text-primary con.
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a.page-scroll(href='#about') About
+            li
+              a.page-scroll(href='#segments') Segments
+            li
+              a.page-scroll(href='#logistics') Venue
+            li
+              a.page-scroll(href='#partners') Partners
+            li
+              a.page-scroll(href='#signupsponsor') Sign up
+            li
+              a.page-scroll(href='#organizers') Organizers
+            li
+              a.page-scroll(href='#contact') Contact
+        // /.navbar-collapse
+      // /.container-fluid
 
-    include sections/navigation.jade
+    header
+      .back-slideshow
+        //ul.cb-slideshow
+          li
+            span Image 01
+          li
+            span Image 02
+          li
+            span Image 03
+          li
+            span Image 04
+          li
+            span Image 05
+          li
+            span Image 06
+      .dim
+      .header-content
+        .header-content-inner
+          h1#homeHeading
+            | maths
+            span.text-primary con.
+          br
+          h1.text-less numbers. progress.
+          br
+          //a.btn.btn-primary.btn-xl.page-scroll(href='#about') Subscribe for updates
 
-    include sections/header.jade
 
-    include sections/about.jade
+    section#about
+      .container-fluid
+        .row
+          .col-lg-8.col-lg-offset-2.text-center
+            h2.section-heading What is mathscon?
+            hr
+            p.text-muted
+              | Mathscon is a science conference directed at young researchers, PhD students and undergraduates interested in mathematics and its related fields. Event aims to expose the public to different activities to make them realize how truly amazing Mathematics is. Renowned speakers will give inspirational lectures. Intellectual workshops will be organised in order to illustrate the applications of the mother of all sciences. And finally the conference will end with an engaging social event during which, one will have the chance to discuss anything with the organisers, speakers and other guests.
+            br
+            h2.section-heading Why mathscon?
+            hr
+            p.text-muted
+              | We are a group of a students who admire the beauty of Mathematics. Mathematics is about the concept, not the calculations. It is about shaping thought, not following rules. And we want everyone to know about this. Our mission is to reshape the world's perception of Mathematics.
 
-    include sections/schedule.jade
+            p.text-muted
+              | As we all are subject enthusiasts, we are also sharing the experience of doing research, learning similar modules or stumbling upon hard questions in Mathematics. In an attempt to collaborate and find synergy from our knowledge around the World in a single place we invite you to London – a place you will surely fit in!
 
-    include sections/speakers.jade
+    section#segments.bg-grey
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading Event Segments
+            hr.primary
+      .container
+        .row
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-lightbulb-o.sr-icons
+              h3 Keynote Speakers
+              p.text-muted Throughout the event you will have a chance to experience an extended TEDx style talk from top researches and professionals from field of Mathematics. Field medalist, a mathemagician and others are expected to join us!
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-comments.sr-icons
+              h3 Panel Discussions
+              p.text-muted To change perception of Mathematics we are introducing a new way of presenting the subject to the students - through panels. We plan to host 3 different discussions, from the traditional questions troubling scientists for centuries to the most modern hot topics concentrating on recent developments and applications of Maths
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa-4x.glyphicon.glyphicon-knight.sr-icons
+              h3 Workshops
+              p.text-muted For many Mathematics might be hard to understand without pen-and-paper or an own problem to solve. That's why we are introducing workshops. Have you ever wondered what are the numbers behind a Rubik's cube? Or wanted to challenge chess Grand master in simulatenous exhibition? Or watned to learn probabilities and Maths behind poker? At least few more reasons to join us
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-connectdevelop.sr-icons
+              h3 Networking
+              p.text-muted Whether you want to pursue an academic career in research, or professional with a big chunk of Maths, one thing which is sure are people. Getting to know like-minded peers in a stimulating environment will help you build connections for life.
 
-    include sections/partners.jade
+    aside#logistics
+      .container-fluid.text-center
+        .col-lg-6.verticalLine
+          .col-lg-2.col-lg-offset-2
+            i.fa.fa-4x.fa-calendar.sr-icons
+          .col-lg-8
+            h2 10-11 February 2017
+        .col-lg-6
+          .col-lg-8
+            h2 Imperial College London
+          .col-lg-2
+            i.fa.fa-4x.fa-map-marker.sr-icons
 
-    include sections/tickets.jade
+    section#location.no-padding.bg-grey
+      .col-lg-4.col-lg-offset-1.text-center
+        section.no-padding
+          br
+          h3 About Blackett
+          hr
+          br
+          p
+            | The conference will take place at Imperial College London, on 11th of February. The venue for the event will be the Blackett Building with space for workshops within the same amenity. Providing capacity for over 250 students, expect great questions and interesting answers. After a full day at Imperial, we will head out to our social part of the event - 
+            strong mathscon ball
+            | . The location of that part is secret and yet to be revealed.
+      .col-lg-6.col-lg-offset-1.no-padding
+        #map
 
-    include sections/organizers.jade
+    section#partners
+      .container.text-center
+        .call-to-action
+          h2 Partners
+          hr
+          br
+      .container-fluid
+        .row.no-gutter
+          .col-lg-2.col-lg-offset-1.col-sm-6
+            a.portfolio-box(href='http://www.ucl.ac.uk/~ucahadm/index1310.html')
+              img.img-responsive(src='images/portfolio/thumbnails/ucl.png', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Mathematics Society
+                  .project-name
+                    | University College London
+          .col-lg-2.col-sm-6
+            a.portfolio-box(href='https://www.lsesu.com/activities/societies/society/10443/')
+              img.img-responsive(src='images/portfolio/thumbnails/lse.png', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Applicable Mathematics Society
+                  .project-name
+                    | London School of Economics
+          .col-lg-2.col-sm-6
+            a.portfolio-box(href='https://www.union.ic.ac.uk/rcsu/mathsoc/')
+              img.img-responsive(src='images/portfolio/thumbnails/imperial.png', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Mathematics Society
+                  .project-name
+                    | Imperial College London
+          .col-lg-2.col-sm-6
+            a.portfolio-box(href='https://invariants.org.uk/')
+              img.img-responsive(src='images/portfolio/thumbnails/oxford.png', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Mathematics Society
+                  .project-name
+                    | University of Oxford
+          .col-lg-2.col-sm-6
+            a.portfolio-box(href='http://warwickmaths.org/')
+              img.img-responsive(src='images/portfolio/thumbnails/warwick.png', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Mathematics Society
+                  .project-name
+                    | University of Warwick
 
-    include sections/contactus.jade
+    hr.long
+    aside#signupsponsor
+      .container-fluid.text-center
+        h2 Like what you see? Sign up now!
+        hr
+        br
+      .container-fluid.text-center
+          .container-fluid
+            p Join us for a magical, spell-binding, riveting, joyous, mesmerising, incredible, unforgettable weekend of math-filled goodness, only at mathscon.
+          .container-fluid
+            a.btn.btn-primary.btn-xl(href='#mailchimp') Subscribe for updates
+          br
+          .container-fluid
+            p
+              | Interested in sponsoring us? Get in 
+              a.page-scroll(href="#contact") touch
 
-    include sections/footer.jade
+    section#organizers.bg-grey
+      .container.text-center
+        .call-to-action
+          h2 Organizers
+          hr
+          br
+      .container-fluid.text-center
+        .col-lg-2.col-lg-offset-2
+          .team-member
+            img.img-responsive.img-circle(src='images/team/teambwNikita.png', alt='')
+            h4 Nikita
+            p.text-muted Co-founder
+            ul.list-inline.social-buttons
+              li
+                a(href='https://www.facebook.com/nikita.deviataikin')
+                  i.fa.fa-facebook
+              li
+                a(href='https://www.linkedin.com/in/nikita-devyataykin-0a7182106?')
+                  i.fa.fa-linkedin
+        .col-lg-2
+          .team-member
+            img.img-responsive.img-circle(src='images/team/teambwMateusz.png', alt='')
+            h4 Mateusz
+            p.text-muted Co-founder
+            ul.list-inline.social-buttons
+              li
+                a(href='https://www.facebook.com/mateusz.j.staniszewski.3')
+                  i.fa.fa-facebook
+              li
+                a(href='https://www.linkedin.com/in/mateusz-jakub-staniszewski-19946590?')
+                  i.fa.fa-linkedin
+        .col-lg-2
+          .team-member
+            img.img-responsive.img-circle(src='images/team/teambwAli.png', alt='')
+            h4 Ali
+            p.text-muted Project Director
+            ul.list-inline.social-buttons
+              li
+                a(href='https://www.facebook.com/atttali')
+                  i.fa.fa-facebook
+              li
+                a(href='https://www.linkedin.com/in/attarali?')
+                  i.fa.fa-linkedin
+        .col-lg-2
+          .team-member
+            img.img-responsive.img-circle(src='images/team/teambwAureliene.png', alt='')
+            h4 Aurelien
+            p.text-muted Logistics & Liaison Officer
+            ul.list-inline.social-buttons
+              li
+                a(href='https://www.facebook.com/aurefavre')
+                  i.fa.fa-facebook
+              li
+                a(href='https://www.linkedin.com/in/aurelien-favre-a3bab0112?')
+                  i.fa.fa-linkedin
 
-    link(href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel='stylesheet')
-    link(href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css', rel='stylesheet')
-    link(href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css', rel='stylesheet')
-    link(href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.min.css', rel='stylesheet')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
-    script(src='js/maps.min.js')
-    script(src='js/navbar.min.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.min.js')
-    script(src='https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js')
-    script(src='js/scrolling-nav.min.js')
-    script(src='js/speakers.min.js')
+      .container-fluid.text-center
+        .col-lg-2.col-lg-offset-2
+          .team-member
+            img.img-responsive.img-circle(src='images/team/teambwDavid.png', alt='')
+            h4 David
+            p.text-muted Sponsorship Officer
+            ul.list-inline.social-buttons
+              li
+                a(href='https://www.facebook.com/David.Peter.Klambauer')
+                  i.fa.fa-facebook
+              li
+                a(href='https://www.linkedin.com/in/david-p-klambauer-359509105?')
+                  i.fa.fa-linkedin
+        .col-lg-2
+          .team-member
+            img.img-responsive.img-circle(src='images/team/teambwAbhinav.png', alt='')
+            h4 Abhinav
+            p.text-muted Webmaster
+            ul.list-inline.social-buttons
+              li
+                a(href='https://www.facebook.com/mishrabhinav')
+                  i.fa.fa-facebook
+              li
+                a(href='https://www.linkedin.com/in/mishrabhinav')
+                  i.fa.fa-linkedin
+        .col-lg-2
+          .team-member
+            img.img-responsive.img-circle(src='images/team/teambwMarta.png', alt='')
+            h4 Marta
+            p.text-muted Marketing Officer
+            ul.list-inline.social-buttons
+              li
+                a(href='https://www.facebook.com/martaagnieszka.koscielak')
+                  i.fa.fa-facebook
+              li
+                a(href='https://www.linkedin.com/in/marta-ko%C5%9Bcielak-4b47a087?')
+                  i.fa.fa-linkedin
+        .col-lg-2
+          .team-member
+            img.img-responsive.img-circle(src='images/team/teambwGeorgina.png', alt='')
+            h4 Georgina
+            p.text-muted Communication Officer
+            ul.list-inline.social-buttons
+              li
+                a(href='https://www.facebook.com/georgina.stephanou')
+                  i.fa.fa-facebook
+              li
+                a(href='https://www.linkedin.com/in/georgina-stephanou-b74a3a128?')
+                  i.fa.fa-linkedin
+
+    section#contact
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2.text-center
+            h2.section-heading Contact Us
+        hr
+        br
+        .row
+          .col-lg-2.col-lg-offset-2.text-center
+            a(href='mailto:team@mathscon.com')
+              i.fa.fa-envelope-o.fa-3x.sr-contact
+              p Email
+          .col-lg-2.text-center
+            a(href='tel:+447546668082')
+              i.fa.fa-phone.fa-3x.sr-contact
+              p Phone
+          .col-lg-2.text-center
+            a(href='http://bit.ly/mathscon-venue')
+              i.fa.fa-map-marker.fa-3x.sr-contact
+              p Venue
+          .col-lg-2.text-center
+            a(href='https://www.facebook.com/mathsconference/')
+              i.fa.fa-facebook-square.fa-3x.sr-contact
+              p Social
+
+    footer.footer-distributed
+      .container-fluid
+        .col-lg-8.col-lg-offset-2
+          .footer-right
+            h5
+              | © 2016 maths
+              span.text-primary con. 
+              | all rights reserved.
+
+    // jQuery
+    script(src='vendor/jquery/jquery.min.js')
+    // Bootstrap Core JavaScript
+    script(src='vendor/bootstrap/js/bootstrap.min.js')
+    // Plugin JavaScript
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')
+    script(src='vendor/scrollreveal/scrollreveal.min.js')
+    script(src='vendor/magnific-popup/jquery.magnific-popup.min.js')
     script(src='http://maps.google.com/maps/api/js?key=AIzaSyAJcu4LfSHQ6Qv1T8MHWSklFl0g1Y4B49Y&sensor=false')
+    script(src='js/maps.min.js')
+    // Theme JavaScript
+    script(src='js/creative.min.js')
