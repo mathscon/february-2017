@@ -198,7 +198,6 @@ header .header-content .header-content-inner h1 {
   text-transform: lowercase;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 30px;
 }
 header .header-content .header-content-inner hr {
   margin: 30px auto;
@@ -502,7 +501,17 @@ footer h5 {
 		line-height: 1.8;
 	}
 	#homeHeading {
-		font-size: 72px;
+		font-size: 50px;
+	}
+}
+@media (max-width: 420px) {
+	#homeHeading {
+		font-size: 55px;
+	}
+}
+@media (max-width: 900px) {
+	#homeHeading {
+		font-size: 65px;
 	}
 }
 .verticalLine {
@@ -524,7 +533,7 @@ footer h5 {
 	visibility: visible;
 }
 #homeHeading {
-	font-size: 120px
+	font-size: 60px
 }
 .back-slideshow {
 	height: 100%;
