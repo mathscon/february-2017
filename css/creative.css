@@ -501,7 +501,7 @@ footer h5 {
 		line-height: 1.8;
 	}
 	#homeHeading {
-		font-size: 50px;
+		font-size: 60%;
 	}
 }
 @media (max-width: 420px) {
@@ -509,9 +509,9 @@ footer h5 {
 		font-size: 55px;
 	}
 }
-@media (max-width: 900px) {
+@media (max-width: 800px) {
 	#homeHeading {
-		font-size: 65px;
+		font-size: 70%;
 	}
 }
 .verticalLine {
@@ -533,7 +533,7 @@ footer h5 {
 	visibility: visible;
 }
 #homeHeading {
-	font-size: 60px
+	font-size: 120px
 }
 .back-slideshow {
 	height: 100%;
