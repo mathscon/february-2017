@@ -91,7 +91,7 @@ aside {
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: #FF7F00;
+  color: #fff;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   text-transform: lowercase;
@@ -198,6 +198,14 @@ header .header-content .header-content-inner h1 {
   text-transform: lowercase;
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 120px
+}
+header .header-content .header-content-inner h2 {
+  font-weight: 700;
+  text-transform: lowercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 60px
 }
 header .header-content .header-content-inner hr {
   margin: 30px auto;
@@ -226,7 +234,7 @@ header .header-content .header-content-inner p {
     margin-right: auto;
   }
   header .header-content .header-content-inner h1 {
-    font-size: 50px;
+    font-size: 120px;
   }
   header .header-content .header-content-inner p {
     font-size: 18px;
@@ -500,19 +508,23 @@ footer h5 {
 	.footer-distributed .footer-left p.footer-links{
 		line-height: 1.8;
 	}
-	#homeHeading {
+	.title {
 		font-size: 60%;
 	}
+header .header-content .header-content-inner h1 {
+  font-size: 60px
+}
+header .header-content .header-content-inner h2 {
+  font-size: 45px
+}
 }
 @media (max-width: 420px) {
-	#homeHeading {
-		font-size: 55px;
-	}
+header .header-content .header-content-inner h1 {
+  font-size: 40px
 }
-@media (max-width: 800px) {
-	#homeHeading {
-		font-size: 70%;
-	}
+header .header-content .header-content-inner h2 {
+  font-size: 25px
+}
 }
 .verticalLine {
 		border-right: thick solid #FF7F00;
@@ -532,7 +544,7 @@ footer h5 {
 .PartnerItem:hover > h5 {
 	visibility: visible;
 }
-#homeHeading {
+.title {
 	font-size: 120px
 }
 .back-slideshow {
