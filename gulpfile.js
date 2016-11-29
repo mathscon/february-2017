@@ -14,7 +14,7 @@ gulp.task('minify', function () {
 });
 
 gulp.task('uglify', function () {
-    gulp.src(['js/maps.js', 'js/navbar.js', 'js/scrolling-nav.js', 'js/speakers.js'])
+    gulp.src(['js/slideshow.js', 'js/maps.js', 'js/navbar.js', 'js/scrolling-nav.js', 'js/speakers.js'])
         .pipe(uglify())
         .pipe(rename({
             suffix: '.min'

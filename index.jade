@@ -13,8 +13,6 @@ html(lang='en')
     link(href='css/slideshow.min.css', rel='stylesheet')
     // Custom Fonts
     link(href='vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet', type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic', rel='stylesheet', type='text/css')
     // Plugin CSS
     link(href='vendor/magnific-popup/magnific-popup.css', rel='stylesheet')
     // Theme CSS
@@ -128,7 +126,7 @@ html(lang='en')
             i.fa.fa-4x.fa-map-marker.sr-icons
 
     section#location.no-padding.bg-grey
-      .col-lg-4.col-lg-offset-1.text-center
+      .col-lg-4.col-lg-offset-1.col-xs-12.text-center
         section.no-padding
           br
           h3 About Blackett
@@ -138,7 +136,7 @@ html(lang='en')
             | The conference will take place at Imperial College London, on 11th of February. The venue for the event will be the Blackett Building with space for workshops within the same amenity. Providing capacity for over 250 students, expect great questions and interesting answers. After a full day at Imperial, we will head out to our social part of the event - 
             strong mathscon ball
             | . The location of that part is secret and yet to be revealed.
-      .col-lg-6.col-lg-offset-1.no-padding
+      .col-lg-6.col-lg-offset-1.col-xs-12.no-padding
         #map
 
     section#partners
@@ -149,7 +147,7 @@ html(lang='en')
           br
       .container-fluid
         .row
-          .col-xs-8.col-xs-offset-2.col-lg-2.col-lg-offset-1
+          .col-xs-8.col-xs-offset-2.col-lg-2.col-lg-offset-1.PartnerItem
             a.portfolio-box(href='http://www.ucl.ac.uk/~ucahadm/index1310.html')
               img.img-responsive(src='images/portfolio/thumbnails/ucl.png', alt='')
               .portfolio-box-caption
@@ -158,7 +156,7 @@ html(lang='en')
                     | Mathematics Society
                   .project-name
                     | University College London
-          .col-xs-8.col-xs-offset-2.col-lg-2.col-lg-offset-0
+          .col-xs-8.col-xs-offset-2.col-lg-2.col-lg-offset-0.PartnerItem
             a.portfolio-box(href='https://www.lsesu.com/activities/societies/society/10443/')
               img.img-responsive(src='images/portfolio/thumbnails/lse.png', alt='')
               .portfolio-box-caption
@@ -167,7 +165,7 @@ html(lang='en')
                     | Applicable Mathematics Society
                   .project-name
                     | London School of Economics
-          .col-xs-8.col-xs-offset-2.col-lg-2.col-lg-offset-0
+          .col-xs-8.col-xs-offset-2.col-lg-2.col-lg-offset-0.PartnerItem
             a.portfolio-box(href='https://www.union.ic.ac.uk/rcsu/mathsoc/')
               img.img-responsive(src='images/portfolio/thumbnails/imperial.png', alt='')
               .portfolio-box-caption
@@ -176,7 +174,7 @@ html(lang='en')
                     | Mathematics Society
                   .project-name
                     | Imperial College London
-          .col-xs-8.col-xs-offset-2.col-lg-2.col-lg-offset-0
+          .col-xs-8.col-xs-offset-2.col-lg-2.col-lg-offset-0.PartnerItem
             a.portfolio-box(href='https://invariants.org.uk/')
               img.img-responsive(src='images/portfolio/thumbnails/oxford.png', alt='')
               .portfolio-box-caption
@@ -185,7 +183,7 @@ html(lang='en')
                     | Mathematics Society
                   .project-name
                     | University of Oxford
-          .col-xs-8.col-xs-offset-2.col-lg-2.col-lg-offset-0
+          .col-xs-8.col-xs-offset-2.col-lg-2.col-lg-offset-0.PartnerItem
             a.portfolio-box(href='http://warwickmaths.org/')
               img.img-responsive(src='images/portfolio/thumbnails/warwick.png', alt='')
               .portfolio-box-caption
@@ -205,7 +203,7 @@ html(lang='en')
           .container-fluid
             p Join us for a magical, spell-binding, riveting, joyous, mesmerising, incredible, unforgettable weekend of math-filled goodness, only at mathscon.
           .container-fluid
-            a.btn.btn-primary.btn-xl(href='#mailchimp') Subscribe for updates
+            a.btn.btn-primary.btn-xl(href='http://eepurl.com/b_3Vdz') Subscribe for updates
           br
           .container-fluid
             p
@@ -362,5 +360,14 @@ html(lang='en')
     script(src='vendor/magnific-popup/jquery.magnific-popup.min.js')
     script(src='https://maps.google.com/maps/api/js?key=AIzaSyAJcu4LfSHQ6Qv1T8MHWSklFl0g1Y4B49Y&sensor=false')
     script(src='js/maps.min.js')
+    script(src='js/slideshow.min.js')
     // Theme JavaScript
     script(src='js/creative.min.js')
+
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-84869468-1', 'auto');
+      ga('send', 'pageview');

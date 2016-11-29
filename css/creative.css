@@ -517,6 +517,10 @@ header .header-content .header-content-inner h1 {
 header .header-content .header-content-inner h2 {
   font-size: 45px
 }
+
+#map {
+	margin-bottom: 30px;
+}
 }
 @media (max-width: 420px) {
 header .header-content .header-content-inner h1 {
@@ -589,10 +593,12 @@ ul.social-buttons li a:active {
   background-color: #FF7F00;
 }
 #map {
-    width: 100%; height: 400px;
+    width: 100%;
+    height: 400px;
 }
 #location {
-    width: 100%; height: 400px;
+    width: 100%;
+    height: 400px;
 }
 a:hover {
 	text-decoration: none;
