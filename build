@@ -10,10 +10,14 @@ mkdir out/fonts
 mkdir out/vendor
 
 node_modules/.bin/jade index.jade
+node_modules/.bin/jade organizers.jade
 
 mv index.html out/
+mv organizers.html out/
 
 node_modules/.bin/gulp
+
+cp agenda.pdf out/agenda.pdf
 
 cp -R css/*.min.css out/css/
 cp -R js/*.min.js out/js/

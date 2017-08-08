@@ -1,8 +1,42 @@
 footer.footer-distributed
-  .container
+  .container-fluid
     .col-lg-8.col-lg-offset-2
       .footer-right
         h5
-          | &copy; 2016 maths
-          span.theme-color con. 
+          | © 2016 maths
+          span.text-primary con. 
           | all rights reserved.
+
+// Modal
+#workshop-signup.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+        h4#myModalLabel.modal-title.text-strong mathscon. workshops
+      .modal-body
+        p
+          | Workshop registration is now open for those who have managed to purchase a ticket! Please fill in the 
+          span.text-strong
+            a(href="https://goo.gl/forms/JTZKG1KV8x8IWdTT2") google form
+          |.
+        p.text-strong Workshop 1: Chess with Professor Jonathan Mestel
+        p Capacity: 16 
+        p This workshop will consist of 16 simultaneous games of chess against Professor Mestel, a Double Grand Master of chess! Good luck to all of you!
+
+        p.text-strong Workshop 2: The Maths behind the Rubik's Cube with Christophe Jefferies
+        p Capacity: 20
+        p Description: Christopher can solve any cube in less than 15 seconds! Join this workshop to learn about some of the algorithms he uses, and improve your technique.
+
+        p.text-strong Workshop 3: What can Game Theory do for you? By Dr Borgo
+        p Capacity: 100+
+        p Description: Dr Dal Borgo, from UCL, will engage in an interactive lecture on Game Theory. Learn about how Game Theory can impact your every day life!
+
+        p.text-strong Workshop 4: Entrepreneurial tips by Charles Dupont
+        p Capacity: 30 
+        p Description: Charles Dupont is the technical co-founder of MarkIt Education. He focuses on entrepreneurial solutions to real world problems, so sign up here to gain first hand advice on entrepreneurship and start up strategies!
+
+        p.text-strong Workshop 5: Meet Poker Champion Liv Boeree
+        p Capacity: 100+
+        p Description: Liv Boeree will offer insight into how to approach the game of poker, as well as advice on how to react to adverse strategies from competitors. She has a degree in Physics with Astrophysics from Manchester and happens to be a poker champion! She has won over 3 mil in poker tournaments!

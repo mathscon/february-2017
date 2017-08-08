@@ -4,7 +4,7 @@ var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 
 gulp.task('minify', function () {
-    gulp.src(['css/creative.css', 'css/main.css', 'css/slideshow.css'])
+    gulp.src(['css/creative.css', 'css/slideshow.css'])
         .pipe(minify())
         .pipe(rename({
             suffix: '.min'
@@ -14,7 +14,7 @@ gulp.task('minify', function () {
 });
 
 gulp.task('uglify', function () {
-    gulp.src(['js/slideshow.js', 'js/maps.js', 'js/navbar.js', 'js/scrolling-nav.js', 'js/speakers.js'])
+    gulp.src(['js/slideshow.js', 'js/maps.js'])
         .pipe(uglify())
         .pipe(rename({
             suffix: '.min'
