@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7e88e7c-c874-415f-a3b2-b52fe47d148d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/sections/footer.jade" beforeDir="false" afterPath="$PROJECT_DIR$/sections/footer.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/nav.jade" beforeDir="false" afterPath="$PROJECT_DIR$/sections/nav.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/team/teambwMateusz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/team/teambwNikita.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
